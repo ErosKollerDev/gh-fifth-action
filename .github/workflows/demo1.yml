@@ -1,12 +1,20 @@
 name: Events Demo 1
 on:
+  issues:
+    types: [opened, edited, closed]
   pull_request:
     types: [opened]
     branches:
       - main
-      - releases/**
+      - dev-* #/dev-1, /dev-2
+      - releases/** #releases/new or releases/new/one
+      - feat/** #feat/button or feat/button/clear
   workflow_dispatch:
-
+  push:
+    branches:
+      - dev-* #/dev-1, /dev-2
+      - releases/** #releases/new or releases/new/one
+      - feat/** #feat/button or feat/button/clear
   # push:
   #   branches:
   #     - "main"
