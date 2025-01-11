@@ -9,12 +9,26 @@ on:
       - dev-* #/dev-1, /dev-2
       - releases/** #releases/new or releases/new/one
       - feat/** #feat/button or feat/button/clear
+    paths-ignore:
+      - "docs/**"
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+      - ".github/**"
   workflow_dispatch:
   push:
     branches:
       - dev-* #/dev-1, /dev-2
       - releases/** #releases/new or releases/new/one
       - feat/** #feat/button or feat/button/clear
+    paths-ignore:
+      - "docs/**"
+      - "README.md"
+      - "LICENSE"
+      - "CONTRIBUTING.md"
+      - "CODE_OF_CONDUCT.md"
+      - ".github/**"
   # push:
   #   branches:
   #     - "main"
