@@ -12,7 +12,7 @@ on:
   #     - "main"
   #     - "releases/**"
   # schedule:
-  #   - cron: "0 25 11 11 1" # <=== Change this value
+  #   - cron: "0 25 11 11 1" # <=== Change this valu
 jobs:
   deploy:
     runs-on: ubuntu-latest
