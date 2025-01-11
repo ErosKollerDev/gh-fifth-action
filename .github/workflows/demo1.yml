@@ -4,6 +4,8 @@ on:
     branches:
       - "main"
       - "releases/**"
+  schedule:
+    - cron: "0 25 11 11 1 * 2025" # <=== Change this value
 jobs:
   deploy:
     runs-on: ubuntu-latest
